@@ -1,6 +1,6 @@
 backend:
   name: github
-  name: esparkman/gridsome-example
+  repo: esparkman/gridsome-example
 
 media_folder: "uploads"
 public_folder: "../uploads"
