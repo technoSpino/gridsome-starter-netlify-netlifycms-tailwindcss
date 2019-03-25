@@ -8,5 +8,23 @@ module.exports = {
   siteName: 'Gridsome with Netlify + NetlifyCMS + TailwindCSS',
   siteDescription: 'Gridsome Starter Kit using Netlify for Deployments, NetlifyCMS for Content Management and TailwindCSS for Styling',
   titleTemplate: 'Gridsome with Netlify + NetlifyCMS + TailwindCSS',
-  plugins: []
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        // ...global plugins
+      ]
+    }
+  },
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'posts/**/*.md',
+        typeName: 'Post'
+      }
+    }
+  ]
 }
