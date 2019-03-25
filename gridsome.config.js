@@ -25,6 +25,12 @@ module.exports = {
         path: 'posts/**/*.md',
         typeName: 'Post'
       }
-    }
+    },
+		{
+			use: 'gridsome-plugin-netlify-cms',
+			options: {
+				publicPath: '/admin'
+			}
+		}
   ]
 }
