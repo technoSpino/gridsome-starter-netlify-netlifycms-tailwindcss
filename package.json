@@ -13,6 +13,7 @@
     "netlify-cms": "^2.8.0"
   },
   "devDependencies": {
-    "@gridsome/transformer-remark": "^0.2.1"
+    "@gridsome/transformer-remark": "^0.2.1",
+    "gridsome-plugin-tailwind": "^0.0.2"
   }
 }
